@@ -22,7 +22,7 @@
             <layout>default</layout>
         </repository>
     </distributionManagement>
-    --
+
     <build>
         <plugins>
             <!-- Maven Assembly Plugin -->
