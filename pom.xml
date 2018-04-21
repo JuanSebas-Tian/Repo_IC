@@ -3,7 +3,7 @@
     <groupId>com.myorganization.app</groupId>
     <name>My App</name>
     <version>1.0</version>
-    <url>http://maven.apache.org</url>
+    <url>http://18.216.211.157:8081/nexus/content/repositories/snapshots/</url>
     <packaging>jar</packaging>
 
     <properties>
