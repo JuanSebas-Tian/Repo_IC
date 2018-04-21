@@ -3,7 +3,7 @@
     <groupId>com.myorganization.app</groupId>
     <name>My App</name>
     <version>1.0</version>
-    <url>http://18.216.211.157:8081/nexus/content/repositories/snapshots/</url>
+    <url>http://maven.apache.org</url>
     <packaging>jar</packaging>
 
     <properties>
@@ -33,6 +33,29 @@
                     </archive>
 
                 </configuration>
+
+        <distributionManagement>
+            <repository>
+                <snapshots>
+                        <enabled>false</enabled>
+                </snapshots>
+                <id>central</id>
+                <name>central</name>
+                <url>http://18.216.211.157:8081/artifactory/libs-release-local</url>
+                <layout>default</layout>
+            </repository>
+            <snapshotRepository>
+                <snapshots>
+                        <enabled>true</enabled>
+                </snapshots>
+                <id>central</id>
+                <name>central</name>
+                <url>http://18.216.211.157:8081/artifactory/libs-snapshot-local</url>
+                <layout>default</layout>
+            </snapshotRepository>
+        </distributionManagement>
+
+
                 <executions>
                     <execution>
                         <id>make-assembly</id>
