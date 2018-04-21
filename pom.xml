@@ -11,27 +11,6 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
-	<distributionManagement>
-        <repository>
-            <snapshots>
-                    <enabled>false</enabled>
-            </snapshots>
-            <id>nexus-snapshots</id>
-            <name>nexus-snapshots</name>
-            <url>http://18.216.211.157:8081/artifactory/libs-release-local</url>
-            <layout>default</layout>
-        </repository>
-        <snapshotRepository>
-            <snapshots>
-                    <enabled>true</enabled>
-            </snapshots>
-            <id>nexus-snapshots</id>
-            <name>nexus-snapshots</name>
-            <url>http://18.216.211.157:8081/artifactory/libs-snapshot-local</url>
-            <layout>default</layout>
-        </snapshotRepository>
-    </distributionManagement>
-    
     <build>
         <plugins>
             <!-- Maven Assembly Plugin -->
