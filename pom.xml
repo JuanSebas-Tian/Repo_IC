@@ -13,14 +13,17 @@
 
 	<distributionManagement>
         <repository>
-            <snapshots>
-                    <enabled>false</enabled>
-            </snapshots>
             <id>nexus-snapshots</id>
-            <name>nexus-snapshots</name>
-            <url>http://18.216.211.157:8081/artifactory/libs-release-local</url>
+            <name>nexus</name>
+            <url>http://18.216.211.157:8081/nexus/content/repositories/releases/</url>
             <layout>default</layout>
         </repository>
+		<snapshotRepository>
+			<id>nexus-snapshots</id>
+			<name>nexus</name>
+			<url>http://18.216.211.157:8081/nexus/content/repositories/snapshots/</url>
+			<layout>default</layout>
+		</snapshotRepository>
     </distributionManagement>
 
     <build>
